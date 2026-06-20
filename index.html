@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GA4 Practice Store</title>
 
- <!-- Google Tag Manager -->
+<!-- ========================================================= -->
+<!-- STEP A: Paste your GTM Container snippet here (in <head>) -->
+<!-- Replace GTM-XXXXXXX with your real container ID            -->
+<!-- ========================================================= -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P3M9GPB');</script>
 <!-- End Google Tag Manager -->
-
--->
 
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -45,6 +47,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
 
+<!-- ========================================================= -->
+<!-- STEP B: Paste your GTM <noscript> snippet here              -->
+<!-- (right after opening <body> tag)                            -->
+<!-- ========================================================= -->
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3M9GPB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -126,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cta_location: btn.dataset.location,
         form_name: 'hero_lead_form'
       });
-      alert('Event pushed to dataLayer: generate_lead (check GTM Preview / debug box)');
+
     });
   });
 
@@ -139,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         value: btn.dataset.value,
         cta_location: btn.dataset.location
       });
-      alert('Event pushed to dataLayer: select_item (' + btn.dataset.item + ')');
+
     });
   });
 
@@ -151,7 +157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       form_id: 'contact_footer_form',
       form_name: 'Contact Form'
     });
-    alert('Event pushed to dataLayer: form_submit');
+
   });
 </script>
 
